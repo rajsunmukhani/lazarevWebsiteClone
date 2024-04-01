@@ -1,0 +1,99 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+  font-family: Neue Haas Grotesk Display Pro;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+nav{
+  text-transform: uppercase;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw 6vw;
+  width: 100%;
+}
+
+nav-p1{
+  height: 100%;
+  width: 10%;
+}
+
+nav-p2{
+  display: flex;
+  gap: 2vw;
+}
+
+nav-p2 a{
+  letter-spacing: 0.05vw;
+  text-decoration: none;
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+
+nav-p3 button{
+  background-color: #0DA34E;
+  border: none;
+  outline: none;
+  padding: 15px 15px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10vw;
+}
+
+nav-p3 button h4{
+  font-weight: 600;
+}
+
+.page1{
+  height: 100vh;
+  width: 100%;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7vw;
+}
+
+.page1 svg{
+  background-color: #0DA34E;
+  border-radius: 50%;
+  height: 6.5vw;
+  width: 6.5vw;
+}
+
+.page1 h1{
+  font-size: 9vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 9vw;
+  letter-spacing: 0vw;
+}
+
+.page1 p{
+  margin-top: 2vw;
+  text-align: center;
+  font-size: 1.25vw;
+  line-height: 2vw;
+}
+
+.page1 p span{
+  border: 1px solid #dadada;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
