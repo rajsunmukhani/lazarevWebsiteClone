@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: 'Neue Haas';
   src: url(./NeueHaasDisplayThin.ttf);
-}
+} */
 
 *{
   margin: 0;
@@ -9,8 +9,8 @@
   box-sizing: border-box;
   font-family: sans-serif;
   color: #fff;
-  font-family: Neue Haas;
-}
+  font-family: Neue Haas Grotesk Display Pro;
+} 
 
 html,body{
   height: 100%;
@@ -179,7 +179,66 @@ nav{
 }
 
 .page2{
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-color: #111;
+  padding: 8vw 7vw 0 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.page2-left,.page2-right{
+  border-top: 0.5px solid #5f5f5f;
+  height: 83%;
+  width: 100%;
+}
+
+.page2-left{
+  /* background-color: yellow; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vw 0 0 0;
+}
+
+.page2-left h6{
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+.page2-left p{
+  font-size: 1.35vw;
+  width: 60%;
+  font-weight: 500;
+}
+
+.pg2-right-pt{
+  padding: 2vw 0 4vw 0;
+  border-bottom: 1px solid #5f5f5f;
+  position: relative;
+  cursor: pointer;
+}
+
+.page2-right :nth-child(4){
+  /* background-color: red; */
+  border: none;
+}
+
+.page2-right h3{
+  font-weight: 500;
+  font-size: 1.75vw;
+  width: 60%;
+}
+
+.page2-right img{
+  height: 7vw;
+  width: 7vw;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  scale: 0.5;
+  opacity: 0;
+}
+
