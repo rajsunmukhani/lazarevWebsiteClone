@@ -40,8 +40,6 @@ function navAnim(){
     })
 }
 
-navAnim();
-
 function page2Anim(){
     var pane = document.querySelectorAll(".page2-right .pg2-right-pt")
     
@@ -67,4 +65,35 @@ function page2Anim(){
     })
 }
 
+function page3VidAnim(){
+    
+    var page3Video = document.querySelector('.page3 video');
+    var playIcon = document.querySelector('.p3-play-vid');
+    
+    playIcon.addEventListener("click",function(){
+        page3Video.play()
+        gsap.to(page3Video,{
+            display : 'initial',
+            opacity : '1',
+            transform : "scaleX(1) scaleY(1)",
+            duration : 0.3,
+        })
+    });
+    
+    page3Video.addEventListener("click",function(){
+        page3Video.pause()
+        gsap.to(page3Video,{
+            opacity : '0',
+            display : 'none',
+            // transform : "scaleX(80%) scaleY(20%)",
+            // duration : 0.3,
+        })
+    })
+    
+}
+
+navAnim();
+
 page2Anim();
+
+page3VidAnim();
