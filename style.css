@@ -392,8 +392,65 @@ nav{
   font-size: 1vw;
 }
 
+.pg5-pt2 .para{
+  padding-top: 7vw;
+  padding-left: 32vw;
+  padding-right: 10vw;
+  margin-bottom: 5vw;
+  /* background-color: #0DA34E; */
+}
+
+.pg5-pt2 h6{
+  color: #111;
+  font-weight: 400;
+  font-size: 1vw;
+  /* background-color: yellow; */
+  height: 5vw;
+  float: left;
+  margin-right: 10vw;
+}
+
 .pg5-pt2 p{
   color: #111;
-  font-size: 1.5vw;
-  width: 30%;
+  font-size: 2.35vw;
+  width: 100%;
+}
+
+.page6{
+  min-height: 200vh;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.pg6-elem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: 50%;
+  width: 100%;
+}
+
+.pg6-elem-left{
+  background-color: red;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  gap: 1vw;
+}
+
+.pg6-elem-left h2{
+  font-weight: 500;
+  font-size: 2.5vw;
+}
+
+.pg6-elem-right{
+  background-color: aqua;
+}
+
+.pg6-elem-right img{
+  height: 5vw;
+  width : 5vw;
 }

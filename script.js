@@ -92,8 +92,8 @@ function page3VidAnim(){
     
 }
 
-navAnim();
+// navAnim();
 
-page2Anim();
+// page2Anim();
 
-page3VidAnim();
+// page3VidAnim();
