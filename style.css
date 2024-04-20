@@ -417,9 +417,9 @@ nav{
 }
 
 .page6{
-  min-height: 200vh;
+  height: 200vh;
   width: 100%;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 .pg6-elem{
@@ -432,25 +432,133 @@ nav{
 }
 
 .pg6-elem-left{
-  background-color: red;
-  width: 40%;
+  /* background-color: red; */
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50vh;
+  padding: 2vw 0;
+  height: 70vh;
   gap: 1vw;
+  border-top: 1px solid #dadada;
+}
+
+#pg6-temp{
+  padding-bottom: 10vw;
 }
 
 .pg6-elem-left h2{
+  color: #111;
   font-weight: 500;
   font-size: 2.5vw;
 }
 
+.pg6-elem-left p{
+  color: #111;
+  font-size: 1.35vw;
+}
+
+.pg6-elem-left button{
+  background-color: #4F5BFF;
+  outline: none;
+  border: none;
+  width: 15vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1vw 2vw;
+  border-radius: 25px;
+}
+
 .pg6-elem-right{
-  background-color: aqua;
+  /* background-color: aqua; */
+  width: 70%;
+  height: 70vh;
+  position: relative;
+  
 }
 
 .pg6-elem-right img{
-  height: 5vw;
-  width : 5vw;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.3s;
+}
+
+.pg6-elem-right video{
+  transition: all ease 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  display: none;
+}
+
+.page7{
+  display: flex;
+  height: 100vh;
+  /* background-color: red; */
+  width: 100%;
+  gap: 6vw;
+  padding: 4vw 5vw;
+  
+}
+
+.pg7-left{
+  width: 25%;
+  height: 100%;
+}
+
+.pg7-right{
+  width: 75%;
+  height: 100%;
+  display: flex;
+  gap: 5vw;
+}
+
+.pg7-right-pane{
+  width: 30vw;
+  padding: 2vw 0;
+  border-top: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+.pg7-right-pane h3{
+  color: #111;
+  font-weight: 500;
+  font-size: 2.75vw;
+}
+
+.pg7-right-pane p{
+   color: #111;
+   font-size: 1.30vw;
+   /* width: 75%; */
+}
+
+.pg7-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.pg7-icons{
+  display: flex;
+  gap: 1vw;
+}
+
+.pg7-media{
+  /* background-color: red; */
+  height: 20vw;
+  position: relative;
+  width: 30vw;
+}
+
+.pg7-media img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

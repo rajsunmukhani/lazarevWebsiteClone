@@ -92,8 +92,34 @@ function page3VidAnim(){
     
 }
 
+
+function page6Anim(){
+    var divs = document.querySelectorAll(".pg6-elem-right");
+    var video = document.querySelectorAll(".pg6-elem-right video");
+    
+    
+    
+    divs.forEach(function(div){
+            div.addEventListener("mouseenter",function(){
+                div.childNodes[1].style.opacity = 0;
+                div.childNodes[3].load();
+                div.childNodes[3].style.opacity = 1;
+                div.childNodes[3].style.display = "initial";
+            })
+            div.addEventListener("mouseleave",function(){
+                div.childNodes[1].style.opacity = 1;
+                div.childNodes[3].pause();
+                div.childNodes[3].style.opacity = 0;
+                div.childNodes[3].style.display = "none";
+            })
+    })
+}
+
+
 // navAnim();
 
 // page2Anim();
 
 // page3VidAnim();
+
+// page6Anim();
