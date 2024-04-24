@@ -115,6 +115,33 @@ function page6Anim(){
     })
 }
 
+function page7Anim(){
+
+    var pg7Elem = document.querySelectorAll('.pg7-right-pane')
+    
+    pg7Elem.forEach(function(pane){
+        pane.addEventListener('mouseenter',function(){
+            pane.childNodes[5].childNodes[3].load();
+            gsap.to(pane.childNodes[5].childNodes[3],{
+                display : 'initial',
+                opacity : 1
+            })
+            gsap.to(pane.childNodes[5].childNodes[1],{
+                opacity : 0
+            })
+        })
+        pane.addEventListener('mouseleave',function(){
+            pane.childNodes[5].childNodes[3].pause();
+            gsap.to(pane.childNodes[5].childNodes[3],{
+                display : 'none',
+                opacity : 0
+            })
+            gsap.to(pane.childNodes[5].childNodes[1],{
+                opacity : 1
+            })
+        })
+    })
+}
 
 // navAnim();
 
@@ -123,3 +150,5 @@ function page6Anim(){
 // page3VidAnim();
 
 // page6Anim();
+
+// page7Anim()
