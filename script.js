@@ -92,7 +92,6 @@ function page3VidAnim(){
     
 }
 
-
 function page6Anim(){
     var divs = document.querySelectorAll(".pg6-elem-right");
     var video = document.querySelectorAll(".pg6-elem-right video");

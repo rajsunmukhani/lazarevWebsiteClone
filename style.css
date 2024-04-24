@@ -618,3 +618,43 @@ nav{
   line-height: 4.5vw;
   font-weight: 600;
 }
+
+.page9{
+  width: 100%;
+  display: flex;
+  padding: 5vw 0;
+}
+
+.pg9-left{
+  width: 30%;
+  /* background-color: red; */
+}
+
+.pg9-left button{
+  padding: 1.5vw 5vw;
+  background-color: #0DA34E;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.pg9-right{
+  width: 70%;
+  /* background-color: blue; */
+}
+
+.pg9-right h6{
+  float: left;
+  /* background-color: yellow; */
+  height: 3vw;
+  width: 35%;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.pg9-right p{
+  font-size: 2.25vw;
+}
