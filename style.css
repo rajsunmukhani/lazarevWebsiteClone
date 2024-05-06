@@ -807,6 +807,7 @@ nav{
 .page11{
   width: 100%;
   min-height: 100vh;
+  padding: 0 5vw;
 }
 
 .pg11-pt1{
@@ -822,9 +823,9 @@ nav{
 
 .page11 h1{
   /* background-color: yellow; */
-  width: 80%;
+  width: 100%;
   display: flex;
-  border-bottom: 1px solid #505050;
+  border-bottom: 1px solid #acacacb9;
   align-items: center;
   justify-content: center;
   color: #000;
@@ -837,31 +838,123 @@ nav{
 
 
 .pg11-pt2{
-  background-color: gray;
-  height: 5vw;
+  /* background-color: gray; */
+  height: 65vh;
   width: 100%;
   display: flex;
-  padding: 2vw 6vw;
+  padding: 2vw 2vw;
   gap: 9vw;
+  border-bottom: 1px solid #acacacb9;
 }
 
 .pg11-pt2 button{
-  width: 15vw;
-  height: 3vw;
-  background-color: #0DA34E;
+  width: 18vw;
+  height: 4vw;
+  background-color: #4F5BFF;
   border: none;
   outline: none;
-  font-size: 1vw;
+  font-size: 1.45vw;
   text-transform: uppercase;
   border-radius: 100px;
+  position: sticky;
+  top: 20%;
 }
 
 .pg11-pt2 button h6{
-  font-weight: 500;
+  font-weight: 600;
 
 }
 
 .pg11-pt2-content{
-  background-color: purple;
-  width: 70%;
+  /* background-color: purple; */
+  width: 60%;
+}
+
+.pg11-pt2-left{
+  /* background-color: green; */
+  width: 22%;
+  display: flex;
+  justify-content: flex-end;
+}
+.pg11-pt2-right{
+  /* background-color: yellow; */
+  width: 78%;
+}
+.pg11-pt2-right p{
+  color: #000;
+  font-size: 1.5vw;
+}
+
+.pg11-pt2-right p:nth-child(2){
+  /* background-color: rebeccapurple; */
+  margin-top: 5vw;
+}
+
+
+.pg11-pt3{
+  height: 50vh;
+  display: flex;
+}
+
+.pg11-pt3-pane{
+  height: 85%;
+  padding: 1.5vw 0.5vw;
+}
+
+.pg11-pt3-pane1{
+  width: 29%;
+  /* background-color: red; */
+  border-right: 1px solid #9e9e9ea9;
+}
+.pg11-pt3-pane2{
+  width: 23%;
+  /* background-color: red; */
+  border-right: 1px solid #9e9e9ea9;
+}
+.pg11-pt3-pane3{
+  width: 18%;
+  /* background-color: red; */
+  border-right: 1px solid #9e9e9ea9;
+}
+.pg11-pt3-pane4{
+  width: 17%;
+  /* background-color: red; */
+  border-right: 1px solid #9e9e9ea9;
+}
+
+.pg11-pt3-pane h4{
+  color: #000000bb;
+  font-weight: 600;
+}
+
+
+.page12{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-top: 5vw; ;
+}
+
+.pg12-left{
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+  padding: 4vw 2vw;
+}
+
+.pg12-left h6{
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.pg12-left h2{
+  margin-top: 3vw;
+  font-weight: 600;
+  font-size: 3.25vw;
+  width: 90%;
+  margin-bottom: 5vw;
+}
+
+.pg12-left p{
+  width: 55%;
 }
