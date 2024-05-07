@@ -929,7 +929,7 @@ nav{
 
 
 .page12{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   padding-top: 5vw; ;
@@ -940,6 +940,8 @@ nav{
   width: 50%;
   /* background-color: red; */
   padding: 4vw 2vw;
+  position: sticky;
+  top: 15%;
 }
 
 .pg12-left h6{
@@ -958,3 +960,56 @@ nav{
 .pg12-left p{
   width: 55%;
 }
+
+.pg12-right{
+    /* background-color: green; */
+    width: 50%;
+    padding: 4vw 0;
+}
+  
+.pg12-right-review{    
+  border-top: 1px solid #94949481;
+  padding: 2vw 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.pg12-right-review p{
+  font-size: 1.75vw;
+}
+
+.page12 img{
+  height: 4.5vw;
+  width: 4.5vw;
+  border-radius: 50%;
+}
+
+.page12 .review-profile{
+  display: flex;
+  align-items: center;
+  gap: 1.25vw;
+  margin-top: 2vw;
+}
+
+.review-profile-name{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.review-profile-name h3{
+  font-size: 1.25vw;
+  font-weight: 500;
+}
+
+.review-profile-name h5{
+  font-size: 0.85vw;
+  font-weight: 500;
+}
+
+.page13{
+  height: 70vh;
+  width: 100%;
+}
+
