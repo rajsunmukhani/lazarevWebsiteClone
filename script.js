@@ -142,6 +142,8 @@ function page7Anim(){
     })
 }
 
+
+
 // navAnim();
 
 // page2Anim();
