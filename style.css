@@ -109,6 +109,13 @@ nav{
   border-radius: 50%;
   height: 6.5vw;
   width: 6.5vw;
+  transition: all ease 0.5s;
+}
+
+.page1 svg:hover{
+  transform: rotate(-30deg);
+  height: 5.5vw;
+  width: 5.5vw;
 }
 
 .page1 h1{
@@ -1017,6 +1024,10 @@ nav{
 
 .pg14-pt1{
   display: flex;
+  border-top: 1px solid #94949481;
+  padding-top: 3vw;
+  padding-bottom: 4vw;
+  border-bottom: 1px solid #94949481;
 }
 
 .pg14-pt1-left{
@@ -1031,3 +1042,76 @@ nav{
   font-weight: 600;
 }
 
+.pg14-pt2{
+  display: flex;
+  padding-top: 2vw;
+  justify-content: space-between;
+  border-bottom: 1px solid #94949481;
+  padding-bottom: 4vw;
+}
+
+.pg14-pt2-left{
+  display: flex;
+  gap: 2vw;
+}
+
+.pg14-pt2-left h4{
+  color: #666;
+  font-size: 0.9vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pg14-pt2-left h5{
+  margin-top: 1vw;
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+.pg14-pt2-right{
+  /* background-color: red; */
+  width: 30%;
+}
+
+.pg14-pt2-right h6{
+  color: #666;
+  font-size: 0.9vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pg14-pt2-right h3{
+  font-weight: 500;
+  font-size: 2.55vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
+.pg14-pt2-right ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vw;
+}
+
+
+.pg14-pt2-right a{
+  text-decoration: none;
+}
+
+.pg14-pt2-links{
+  width: 85%;
+  padding-left: 1vw;
+}
+
+.pg14-pt3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vw;
+}
+
+
+.pg14-pt3 h5{
+  font-size: 1vw;
+  font-weight: 500;
+}

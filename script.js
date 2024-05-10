@@ -144,12 +144,12 @@ function page7Anim(){
 
 
 
-// navAnim();
+navAnim();
 
-// page2Anim();
+page2Anim();
 
-// page3VidAnim();
+page3VidAnim();
 
-// page6Anim();
+page6Anim();
 
-// page7Anim()
+page7Anim()
