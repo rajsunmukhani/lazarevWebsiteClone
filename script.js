@@ -1,5 +1,5 @@
 function navAnim(){
-    var nav = document.querySelector('nav')
+    var nav = document.querySelector('.nav-pt2')
 
     nav.addEventListener('mouseenter',function(){
         let tl = gsap.timeline();

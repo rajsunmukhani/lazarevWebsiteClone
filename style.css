@@ -66,10 +66,30 @@ nav{
   padding: 0 1vw;
   width: 10vw;
   height: 3vw;
-  background-color: #0DA34E;
+  background: transparent;
+  position: relative;
   border: none;
   outline: none;
   border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button-clr-div{
+  background-color: #0DA34E;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  transition: all ease 0.3s;
+}
+
+.nav-pt3 button:hover .button-clr-div{
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+
 }
 
 .nav-pt3 button h4{
