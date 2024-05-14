@@ -104,16 +104,46 @@ nav{
   padding-top: 7vw;
 }
 
-.page1 svg{
+.page1 h1:nth-child(1){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1 h1 span{
   background-color: #0DA34E;
   border-radius: 50%;
+  height: 7vw;
+  width: 7vw;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.page1 svg{
   height: 6.5vw;
   width: 6.5vw;
   transition: all ease 0.5s;
 }
 
-.page1 svg:hover{
+.page1 .svg-cont{
+  width: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.page1 span:hover svg{
   transform: rotate(-30deg);
+  height: 10vw;
+  width: 10vw;
+}
+
+.page1 span:hover{
   height: 5.5vw;
   width: 5.5vw;
 }
