@@ -153,3 +153,17 @@ page3VidAnim();
 page6Anim();
 
 page7Anim()
+
+
+gsap.from('.pg11-pt3-pane h3',{
+    x : '0',
+    duration : 0.5,
+    scrollTrigger : {
+        trigger : ".pg11-pt3-pane h3",
+        scroller : "body",
+        // markers : true,
+        start : "top 90%",
+        end : "top 30%",
+        scrub : 4
+    } 
+})

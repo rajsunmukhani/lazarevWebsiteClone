@@ -95,7 +95,7 @@ nav{
 .nav-pt3 button h4{
   font-size: 1vw;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .nav-pt3 button svg{
@@ -982,6 +982,52 @@ nav{
 .pg11-pt3-pane h4{
   color: #000000bb;
   font-weight: 600;
+  margin-bottom: 2vw;
+}
+.pg11-pt3-pane h3{
+  background-color: #000;
+  /* color: #000000bb; */
+  margin-top: 0.15vw;
+  width: 13vw;
+  padding: 0.65vw;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.85vw;
+  display: flex;
+  align-items: center;
+  gap: 0.75vw;
+}
+
+.pg11-pt3-pane h3:nth-child(2){
+  transform: translateX(10%);
+}
+.pg11-pt3-pane h3:nth-child(3){
+  transform: translateX(20%);
+}
+.pg11-pt3-pane h3:nth-child(4){
+  transform: translateX(30%);
+}
+.pg11-pt3-pane h3:nth-child(5){
+  transform: translateX(40%);
+}
+.pg11-pt3-pane h3:nth-child(6){
+  transform: translateX(50%);
+}
+
+.pg11-pt3-pane h3:nth-child(7){
+  transform: translateX(60%);
+}
+
+
+.pg11-pt3-pane h3 span{
+  background-color: #ffffff46;
+  display: block;
+  height: 1.25vw;
+  width: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 
