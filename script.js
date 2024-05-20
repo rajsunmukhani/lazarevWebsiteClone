@@ -43,17 +43,41 @@ function navAnim(){
 function page2Anim(){
     var pane = document.querySelectorAll(".page2-right .pg2-right-pt")
     
+    
     pane.forEach(function(elem){
+        
         elem.addEventListener("mouseenter",function(){
+            var icons = elem.children[0].children[1];
             gsap.to(elem.childNodes[3],{
                 opacity : 1,
                 scale : 1
             })
+            gsap.to(icons.childNodes[1],{
+                top : 0,
+                right : 0,
+                duration : 0.25
+            })
+            gsap.to(icons.childNodes[3],{
+                top : '-80%',
+                right : '-80%',
+                duration : 0.25
+            })
         })
         elem.addEventListener("mouseleave",function(){
+            var icons = elem.children[0].children[1];
             gsap.to(elem.childNodes[3],{
                 opacity : 0,
                 scale : 0.5
+            })
+            gsap.to(icons.childNodes[3],{
+                top : 0,
+                right : 0,
+                duration : 0.25
+            })
+            gsap.to(icons.childNodes[1],{
+                top : '80%',
+                right : '80%',
+                duration : 0.25
             })
         })
         elem.addEventListener("mousemove",function(dets){

@@ -278,6 +278,39 @@ nav{
   cursor: pointer;
 }
 
+.pg2-right-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pg2-right-content i{
+  font-size: 1.25vw;
+  position: relative;
+}
+
+.pg2-right-content-icons{
+  position: relative;
+  /* background-color: red; */
+  height: 1.25vw;
+  width: 1.25vw;
+  overflow: hidden;
+
+}
+
+.pg2-right-content-icons i:nth-child(1){
+  position: absolute;
+  top: 80%;
+  right: 80%;
+  /* background-color: violet; */
+}
+
+.pg2-right-content-icons i:nth-child(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
 .page2-right :nth-child(4){
   /* background-color: red; */
   border: none;
