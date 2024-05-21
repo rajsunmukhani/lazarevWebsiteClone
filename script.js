@@ -45,6 +45,7 @@ function page2Anim(){
     
     
     pane.forEach(function(elem){
+
         
         elem.addEventListener("mouseenter",function(){
             var icons = elem.children[0].children[1];
@@ -87,6 +88,35 @@ function page2Anim(){
             })
         })
     })
+
+    gsap.to('.bord1',{
+        width : '100%',
+        scrollTrigger : {
+            trigger : '.bord1',
+            scroller : 'body',
+            // markers : true,
+            start : 'top 85%',
+        }
+    })
+    gsap.to('.bord2',{
+        width : '100%',
+        scrollTrigger : {
+            trigger : '.bord2',
+            scroller : 'body',
+            // markers : true,
+            start : 'top 85%',
+        }
+    })
+    gsap.to('.bord3',{
+        width : '100%',
+        scrollTrigger : {
+            trigger : '.bord3',
+            scroller : 'body',
+            // markers : true,
+            start : 'top 85%',
+        }
+    })
+    
 }
 
 function page3VidAnim(){
@@ -166,6 +196,20 @@ function page7Anim(){
     })
 }
 
+function page11Anim(){
+    gsap.from('.pg11-pt3-pane h3',{
+        x : '0',
+        duration : 0.5,
+        scrollTrigger : {
+            trigger : ".pg11-pt3-pane h3",
+            scroller : "body",
+            // markers : true,
+            start : "top 90%",
+            end : "top 30%",
+            scrub : 4
+        } 
+    })
+}
 
 
 navAnim();
@@ -178,16 +222,4 @@ page6Anim();
 
 page7Anim()
 
-
-gsap.from('.pg11-pt3-pane h3',{
-    x : '0',
-    duration : 0.5,
-    scrollTrigger : {
-        trigger : ".pg11-pt3-pane h3",
-        scroller : "body",
-        // markers : true,
-        start : "top 90%",
-        end : "top 30%",
-        scrub : 4
-    } 
-})
+page11Anim()
