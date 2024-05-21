@@ -196,6 +196,30 @@ function page7Anim(){
     })
 }
 
+function page9Anim(){
+    document.querySelectorAll('.pg9-content-pane').forEach(function(pane){
+        pane.addEventListener('mouseenter',function(){
+            gsap.to(pane.childNodes[7],{
+                top : 0,
+                opacity : 1
+            })
+        })
+        pane.addEventListener('mouseleave',function(){
+            var tl = gsap.timeline()
+            tl.to(pane.childNodes[7],{
+                top : '100%',
+            })
+            tl.to(pane.childNodes[7],{
+                opacity : 0
+            })
+            tl.to(pane.childNodes[7],{
+                top : '-100%',
+            })
+        })
+    })
+    
+}
+
 function page11Anim(){
     gsap.from('.pg11-pt3-pane h3',{
         x : '0',
@@ -223,3 +247,8 @@ page6Anim();
 page7Anim()
 
 page11Anim()
+
+page9Anim()
+
+
+
