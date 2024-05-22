@@ -540,6 +540,11 @@ nav{
   height: 70vh;
   gap: 1vw;
   border-top: 1px solid #dadada;
+  transition: all ease 0.3s;
+}
+
+.pg6-elem-left:hover{
+  border-top: 2px solid #111;
 }
 
 #pg6-temp{
@@ -741,10 +746,11 @@ nav{
 
 .page8{
   height: 50vh;
-  border-bottom: 1px solid #9e9e9e;
+  /* border-bottom: 1px solid #9e9e9e; */
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .page8 h2{
@@ -927,6 +933,30 @@ nav{
   font-weight: 500;
 }
 
+.pg10-pane-icons{
+  /* background-color: red; */
+  overflow: hidden;
+  height: 1.5vw;
+  width: 1.5vw;
+  position: relative;
+}
+
+.pg10-pane-icons i{
+  font-size: 1.5vw;
+  position: absolute;
+  transition: all ease 0.3s;
+}
+
+.pg10-pane-icons i:nth-child(2){
+  top: 80%;
+  right: 85%;
+}
+
+.pg10-pane-container .pane:hover i{
+  transform: translate(80%,-80%);
+}
+
+
 .page10 button{
   background-color: #0DA34E;
   border: none;
@@ -1054,8 +1084,13 @@ nav{
   display: flex;
 }
 
+.pg11-pt3-content-container{
+  display: flex;
+  width: 100%;
+}
+
 .pg11-pt3-pane{
-  height: 85%;
+  height: 0;
   padding: 1.5vw 0.5vw;
 }
 

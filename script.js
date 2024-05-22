@@ -220,18 +220,41 @@ function page9Anim(){
     
 }
 
+function page8Anim(){
+    gsap.to('.bord4',{
+        width : '100%',
+        scrollTrigger : {
+            trigger : '.bord4',
+            scroller : 'body',
+            // markers : true,
+            start : 'top 85%',
+        }
+    })
+}
+
 function page11Anim(){
     gsap.from('.pg11-pt3-pane h3',{
         x : '0',
         duration : 0.5,
         scrollTrigger : {
-            trigger : ".pg11-pt3-pane h3",
+            trigger : ".pg11-pt3-content-container",
             scroller : "body",
             // markers : true,
             start : "top 90%",
             end : "top 30%",
             scrub : 4
         } 
+    })
+
+    gsap.to('.pg11-pt3-pane',{
+        height : '80%',
+        scrollTrigger : {
+            scroller : 'body',
+            trigger : '.pg11-pt3-pane',
+            // markers : true,
+            start : 'top 85%',
+            end : 'top 0%'
+        }
     })
 }
 
@@ -245,6 +268,8 @@ page3VidAnim();
 page6Anim();
 
 page7Anim()
+
+page8Anim()
 
 page11Anim()
 
