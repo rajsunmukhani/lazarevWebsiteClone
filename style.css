@@ -807,6 +807,7 @@ nav{
 .pg9-elems details{
   border-top: 1px solid #5f5f5f;
   padding: 1.5vw 0;
+  margin-top: -1.5vw;
 }
 
 .pg9-elems details summary{
@@ -1263,7 +1264,7 @@ nav{
 }
 
 .pg14-pt1-left{
-  width: 50%;
+  width: 70%;
   /* background-color: rebeccapurple; */
 
 }
@@ -1273,6 +1274,95 @@ nav{
   line-height: 4.5vw;
   font-weight: 600;
 }
+
+.pg14-pt1-right{
+  /* background-color: red; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.pg14-pt1-right input{
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #5f5f5f;
+  width: 75%;
+  height: 3.5vw;
+  font-size: 1.25vw;
+  display: inline-block;
+}
+
+.pg14-pt1-right .input{
+  position: relative;
+}
+
+.pg14-pt1-right .input label{
+  position: absolute;
+  top: 30%;
+  font-size: 1.25vw;
+  left: 0;
+  pointer-events: none;
+  transition: all ease 0.25s;
+  color: #fff;
+}
+
+.pg14-pt1-right input:focus + label{
+  top: 0;
+  font-size: 0.65vw;
+}
+
+.pg14-pt1-right input:focus{
+  outline: none;
+}
+
+
+.pg14-pt1-right button{
+  background-color: #ffffff2c;
+  outline: none;
+  border: none;
+  padding: 1vw;
+  border-radius: 50%;
+}
+
+.pg14-pt1-right .mail h4,.pg14-pt1-right .social h4{
+  color: #888;
+  text-transform: uppercase;
+}
+
+
+.pg14-pt1-right a{
+  border: 1px solid #888;
+  padding: 0.75vw 0.75vw;
+  border-radius: 25px;
+  text-transform: uppercase;
+  /* font-size: 1vw; */
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+}
+
+.social-connects a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.pg14-pt1-right .mail,.pg14-pt1-right .social{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.pg14-pt1-right .social-connects{
+  /* background-color: red; */
+  height: 13vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5vw;
+  transition: all ease 0.25s;
+}
+
 
 .pg14-pt2{
   display: flex;
