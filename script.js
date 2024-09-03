@@ -153,17 +153,35 @@ function page6Anim(){
     
     
     divs.forEach(function(div){
-            div.addEventListener("mouseenter",function(){
+        
+        const current = div.childNodes[5];
+            div.addEventListener("mouseenter",function(event){
                 div.childNodes[1].style.opacity = 0;
                 div.childNodes[3].load();
                 div.childNodes[3].style.opacity = 1;
                 div.childNodes[3].style.display = "initial";
+                gsap.to(current,{
+                    left : event.clientX - '600',
+                    top : event.clientY - '250',
+                })
+                current.style.display = 'flex'  
             })
             div.addEventListener("mouseleave",function(){
                 div.childNodes[1].style.opacity = 1;
                 div.childNodes[3].pause();
                 div.childNodes[3].style.opacity = 0;
                 div.childNodes[3].style.display = "none";
+                gsap.to(current,{
+                    left : event.clientX - '600',
+                    top : event.clientY - '250',
+                })
+                current.style.display = 'none'  
+            })
+            div.addEventListener("mousemove", function(event){
+                gsap.to(current,{
+                    left : event.clientX - '600',
+                    top : event.clientY - '250',
+                })
             })
     })
 }

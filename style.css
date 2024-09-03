@@ -344,7 +344,7 @@ nav{
 .page3{
   height: 100vh;
   width: 100%;
-  background-image: url("./384fbdd3-7861-4968-b35a-59b3b150df48.webp");
+  background-image: url("./images/384fbdd3-7861-4968-b35a-59b3b150df48.webp");
   background-position: center;
   display: flex;
   align-items: center;
@@ -610,7 +610,7 @@ nav{
   left: 0;
   top: 0;
   background-color: #4F5BFF;
-  display: flex;
+  display: none;
   overflow: hidden;
   padding: 2vw;
 }
